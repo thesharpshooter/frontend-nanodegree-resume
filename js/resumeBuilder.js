@@ -92,7 +92,17 @@ var education = {
 	}]
 }
 
-
+if (bio.lenght > 0 ) {
+	$("#header").append(HTMLskillsStart);
+	var formattedSkills = HTMLskills.replace("%data",bio.skills[0]);
+	$("#skills").append(formattedSkills);
+	formattedSkills = HTMLskills.replace("%data%",bio.skills[1]);
+	$("#skills").append(formattedSkills);
+	formattedSkills = HTMLskills.replace("%data%",bio.skills[2]);
+	$("#skills").append(formattedSkills);
+	formattedSkills = HTMLskills.replace("%data%",bio.skills[3]);
+	$("#skills").append(formattedSkills);
+}
 
 
 
